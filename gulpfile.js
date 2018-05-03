@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 
 // СЖАТИЕ CSS БИБЛИОТЕК
 gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('source/assets/**/*.css') // Выбираем файл для минификации
+    return gulp.src('source/assets/lib/normalize.css/normalize.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
         .pipe(gulp.dest('source/css')); // Выгружаем в папку app/css
@@ -39,7 +39,7 @@ gulp.task('pug', function() {
 // ПЕРЕЖАТИЕ БИБЛИОТЕК JS
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-        'source/assets/libs/jquery/dist/jquery.min.js' // Берем jQuery
+        'source/assets/lib/jquery/dist/jquery.min.js' // Берем jQuery
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
