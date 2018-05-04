@@ -1,1 +1,68 @@
-/*common*/
+p, h1, h2, h3, h4, h5, h6, a, span, dt, dd {font-size: $basic;}
+
+html {
+	font-size: $basic;
+}
+body {
+	background-color: $color-light;
+	background-image: $bg-img;
+	@media print {
+		background-image: none;
+		background-color: transparent;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	color: $color-main;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: $basic * 3;
+	line-height: $basic * 3.5;
+	text-indent: $basic;
+	margin: 0;
+	/*@media print {
+		color: $color-dark;
+	}*/
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 5mm;
+	margin: 0 $basic;
+	padding-top: $basic * 1.5;
+	margin-left: $basic * 4;
+	//border-bottom: .5mm solid;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 5mm;
+	margin: 0 $basic;
+	border-bottom: .5mm solid;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 4mm;
+	margin: 0 $basic;
+	//border-bottom: .5mm solid;
+	text-transform: uppercase;
+	padding-top: 2mm;
+}
+
+p {
+	font-family: $font-usual;
+	text-indent: $basic;
+	line-height: $basic * 1.5;
+	padding: 0 $basic;
+	color: $color-dark;
+}
+
+a {
+	text-decoration: none;
+}

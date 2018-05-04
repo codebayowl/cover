@@ -1,3 +1,87 @@
-/* variables */
-/*common*/
-/* main styles */
+p, h1, h2, h3, h4, h5, h6, a, span, dt, dd {
+  font-size: 4mm; }
+
+html {
+  font-size: 4mm; }
+
+body {
+  background-color: #c3c3c3;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=); }
+  @media print {
+    body {
+      background-image: none;
+      background-color: transparent; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  color: #10b0ca; }
+
+h1 {
+  font-weight: 200;
+  font-size: 12mm;
+  line-height: 14mm;
+  text-indent: 4mm;
+  margin: 0;
+  /*@media print {
+		color: $color-dark;
+	}*/ }
+
+h2 {
+  font-weight: 700;
+  font-size: 5mm;
+  margin: 0 4mm;
+  padding-top: 6mm;
+  margin-left: 16mm;
+  text-transform: uppercase; }
+
+h3 {
+  font-weight: 400;
+  font-size: 5mm;
+  margin: 0 4mm;
+  border-bottom: .5mm solid;
+  text-transform: uppercase; }
+
+h4 {
+  font-weight: 400;
+  font-size: 4mm;
+  margin: 0 4mm;
+  text-transform: uppercase;
+  padding-top: 2mm; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  text-indent: 4mm;
+  line-height: 6mm;
+  padding: 0 4mm;
+  color: #3b4044; }
+
+a {
+  text-decoration: none; }
+
+#wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 190mm;
+  height: 277mm;
+  background: #ebebeb;
+  padding: 10mm;
+  -webkit-box-shadow: 0 0 20mm rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20mm rgba(0, 0, 0, 0.3); }
+  @media print {
+    #wrapper {
+      padding: 0;
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
+
+header, main, footer {
+  display: inline-block;
+  width: 180mm;
+  margin-left: 10mm; }
+
+#subheader p {
+  font-size: 5mm; }
+
+.highlight {
+  color: #0a7283; }

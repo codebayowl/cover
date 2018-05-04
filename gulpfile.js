@@ -14,7 +14,7 @@ var gulp            = require('gulp'), // сам Галп
 
 // СБОРКА SASS/SCSS
 gulp.task('sass', function() {
-    return gulp.src('source/scss/*.+(scss|sass)') // Берем источник
+    return gulp.src('source/scss/*.scss') // Берем источник
     .pipe(sass()) //Преобразуем Sass в CSS посредством gulp-sass
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
     .pipe(gulp.dest('source/css')) // Выгружаем результата в папку src/css
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
 
 // ШПИЁН
 gulp.task('watch', ['browser-sync', 'css-libs', 'pug', 'scripts'], function() {
-    gulp.watch('source/scss/*.+(scss|sass)', ['sass']); //watch sass files
+    gulp.watch('source/**/*.scss', ['sass']); //watch sass files
     gulp.watch('source/pug/*.pug', ['pug']); //watch pug files
     gulp.watch('source/*.html', browserSync.reload); // watch HTML files
     gulp.watch('source/js/**/*.js', browserSync.reload); // watch JS files

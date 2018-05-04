@@ -1,1 +1,29 @@
-/* main styles */
+#wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 190mm;
+	height: 277mm;
+	background: $color-bg;
+	padding: 10mm;
+	box-shadow: 0 0 20mm rgba(0,0,0,.3);
+	@media print {
+		padding: 0;
+		background-image: none;
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+header, main, footer {
+	display: inline-block;
+	width: 180mm;
+	margin-left: 10mm;
+	
+}
+#subheader p {
+	font-size: $basic * 1.25;
+}
+
+.highlight {
+	color: darken($color-main, 15%);
+}
