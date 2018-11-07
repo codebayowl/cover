@@ -22,8 +22,12 @@ header, main, footer {
 }
 #subheader p {
 	font-size: $basic * 1.25;
+	text-align: center;
 }
 
 .highlight {
 	color: darken($color-main, 15%);
+}
+.hidden {
+	display: none;
 }

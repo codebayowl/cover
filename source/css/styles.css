@@ -56,7 +56,8 @@ p {
   color: #3b4044; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #10b0ca; }
 
 #wrapper {
   display: block;
@@ -81,7 +82,11 @@ header, main, footer {
   margin-left: 10mm; }
 
 #subheader p {
-  font-size: 5mm; }
+  font-size: 5mm;
+  text-align: center; }
 
 .highlight {
   color: #0a7283; }
+
+.hidden {
+  display: none; }
