@@ -71,6 +71,7 @@ a {
   @media print {
     #wrapper {
       padding: 0;
+      padding-top: 10mm;
       background-image: none;
       background-color: transparent;
       -webkit-box-shadow: none;
